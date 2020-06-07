@@ -14,7 +14,7 @@
     let url = new URL(window.location);
     let params = new URLSearchParams(url.search);
 	console.log(url);
-    d3.json("http://" + url.host + "/info.json").then( info =>{
+    d3.json("https://" + url.host + "/info.json").then( info =>{
 		console.log(info);
 	});
 	
