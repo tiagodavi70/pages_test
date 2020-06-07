@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<head>
+    <title> Hello </title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+</body>
+<script type="text/javascript">
+    let url = new URL(window.location);
+    let params = new URLSearchParams(url.search);
+	console.log(url);
+    d3.json("http://" + url.host + "/info.json").then( info =>{
+		console.log(info);
+	});
+	
+	console.log("console working");
+	d3.select("body")
+		.append("div")
+		.text("All working!");
+	d3.json("/")
+</script>
+</html>
